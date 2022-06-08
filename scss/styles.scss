@@ -7,6 +7,9 @@
 }
 
 @import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/extend";
+@import "utilities/maps";
 
 body{
     background-color: $color-principal;
@@ -28,16 +31,14 @@ body{
             justify-content: space-between;
             height: 150px;
             h1 {
-                font-family: 'EB Garamond', serif;
-                font-weight: 100;
-                color: $color-fonts;
-                font-size: 50px;
+                @extend %fonts;
+                font-weight: map-get($map: $tituloprincipal, $key: fw-principal );
+                font-size: map-get($map: $tituloprincipal, $key: fs-principal);
                 align-self: center;
                 padding: 100px;
             }
             nav{
-                font-family: 'EB Garamond', serif;
-                color: $color-fonts;
+                @extend %fonts;
             }
             .nav-background{
                 background-color: $color-secundario;
@@ -55,7 +56,7 @@ body{
         main{
             background-color: $color-principal;
             grid-area: main;
-            color: $color-fonts;
+            @extend %fonts;
             .main-toldos{
                 margin-bottom: 70px;
             }
@@ -67,8 +68,7 @@ body{
                 border-radius: 15%;
             }
             .maintxt{
-                font-family: 'EB Garamond', serif;
-                color: $color-fonts;
+                @extend %fonts;
                 text-align: center;
                 padding: 20px;
             }
@@ -76,8 +76,7 @@ body{
         aside{
             background-color: $color-principal;
             grid-area: aside;
-            font-family: 'EB Garamond', serif;
-            color: $color-fonts;
+            @extend %fonts;
             display: flex;
             flex-direction: column;
             .logo{
@@ -130,8 +129,7 @@ body{
                     border: none;
                     background: #67a29e;
                     cursor: pointer;
-                    font-family: 'EB Garamond', serif;
-                    color: $color-fonts;
+                    @extend %fonts;
                   }
             }
         }
@@ -144,12 +142,10 @@ body{
             justify-content: space-evenly;
             .imgcor{
                 border-radius: 20%;
-                height: 300px;
-                width: 400px;
+                @include medidas (400px, 300px);
             }
             .ctxt{
-                font-family: 'EB Garamond', serif;
-                color: $color-fonts;
+                @extend %fonts;
                 font-size: 30px;
             }
         }
@@ -162,12 +158,10 @@ body{
             justify-content: space-evenly;
             .imgtol{
                 border-radius: 20%;
-                height: 300px;
-                width: 400px;
+                @include medidas (400px, 300px);
             }
             .ttxt{
-                font-family: 'EB Garamond', serif;
-                color: $color-fonts;
+                @extend %fonts;
                 font-size: 30px;
             }
         }
@@ -177,8 +171,7 @@ body{
             display: flex;
             justify-content: space-around;
             margin-top: 100px;
-            font-family: 'EB Garamond', serif;
-            color: $color-fonts;
+            @extend %fonts;
             margin-bottom: 20px;
             .f1{
                 display: flex;

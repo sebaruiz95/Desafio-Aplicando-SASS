@@ -5,6 +5,10 @@
   text-decoration: none;
   list-style-type: none; }
 
+body .contenedor header h1, body .contenedor header nav, body .contenedor main, body .contenedor main .maintxt, body .contenedor aside, body .contenedor aside fieldset form button, body .contenedor section .ctxt, body .contenedor .section2 .ttxt, body .contenedor footer {
+  color: #FAFFAF;
+  font-family: 'EB Garamond', serif; }
+
 body {
   background-color: #22577E; }
   body .contenedor {
@@ -22,15 +26,10 @@ body {
       justify-content: space-between;
       height: 150px; }
       body .contenedor header h1 {
-        font-family: 'EB Garamond', serif;
         font-weight: 100;
-        color: #FAFFAF;
         font-size: 50px;
         align-self: center;
         padding: 100px; }
-      body .contenedor header nav {
-        font-family: 'EB Garamond', serif;
-        color: #FAFFAF; }
       body .contenedor header .nav-background {
         background-color: #67a29e; }
       body .contenedor header .dropdown-menu {
@@ -41,8 +40,7 @@ body {
         margin-right: 30px; }
     body .contenedor main {
       background-color: #22577E;
-      grid-area: main;
-      color: #FAFFAF; }
+      grid-area: main; }
       body .contenedor main .main-toldos {
         margin-bottom: 70px; }
       body .contenedor main #carouselExampleCaptions {
@@ -51,15 +49,11 @@ body {
       body .contenedor main .carousel-inner {
         border-radius: 15%; }
       body .contenedor main .maintxt {
-        font-family: 'EB Garamond', serif;
-        color: #FAFFAF;
         text-align: center;
         padding: 20px; }
     body .contenedor aside {
       background-color: #22577E;
       grid-area: aside;
-      font-family: 'EB Garamond', serif;
-      color: #FAFFAF;
       display: flex;
       flex-direction: column; }
       body .contenedor aside .logo {
@@ -99,9 +93,7 @@ body {
           padding: 0.5em 1em;
           border: none;
           background: #67a29e;
-          cursor: pointer;
-          font-family: 'EB Garamond', serif;
-          color: #FAFFAF; }
+          cursor: pointer; }
     body .contenedor section {
       background-color: #22577E;
       grid-area: section;
@@ -111,11 +103,9 @@ body {
       justify-content: space-evenly; }
       body .contenedor section .imgcor {
         border-radius: 20%;
-        height: 300px;
-        width: 400px; }
+        width: 400px;
+        height: 300px; }
       body .contenedor section .ctxt {
-        font-family: 'EB Garamond', serif;
-        color: #FAFFAF;
         font-size: 30px; }
     body .contenedor .section2 {
       background-color: #22577E;
@@ -126,11 +116,9 @@ body {
       justify-content: space-evenly; }
       body .contenedor .section2 .imgtol {
         border-radius: 20%;
-        height: 300px;
-        width: 400px; }
+        width: 400px;
+        height: 300px; }
       body .contenedor .section2 .ttxt {
-        font-family: 'EB Garamond', serif;
-        color: #FAFFAF;
         font-size: 30px; }
     body .contenedor footer {
       background-color: #22577E;
@@ -138,8 +126,6 @@ body {
       display: flex;
       justify-content: space-around;
       margin-top: 100px;
-      font-family: 'EB Garamond', serif;
-      color: #FAFFAF;
       margin-bottom: 20px; }
       body .contenedor footer .f1 {
         display: flex;
