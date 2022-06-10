@@ -11,6 +11,9 @@
 @import "utilities/extend";
 @import "utilities/maps";
 
+
+//Estilos Home 
+/* Estilos Home */
 body{
     background-color: $color-principal;
     .contenedor{
@@ -188,7 +191,229 @@ body{
             }
         }                 
     }
-    
-    
 }
 
+//Estilos Contacto
+/* Estilos Contacto */
+
+.header-contact{
+    h1{
+        @extend %fonts;
+        font-weight: map-get($map: $tituloprincipal, $key: fw-principal );
+        font-size: map-get($map: $tituloprincipal, $key: fs-principal);
+        text-align: center;
+        padding: 100px;
+    }
+    nav{
+        @extend %fonts;
+    }
+    .nav-background{
+        background-color: $color-secundario;
+    }
+    
+    .dropdown-menu{
+        background-color: $color-secundario;
+    }
+    .Logo{
+        height: 70px;
+        width: 70px;
+        margin-right: 30px;
+    }
+}
+
+main{
+    .h2-contact{
+        margin: 30px;
+        text-align: center;
+        color: #FAFFAF;
+        font-family:'EB Garamond', serif ;
+    }
+    .p-contact{
+        text-align: center;
+        color: #FAFFAF;
+        font-family:'EB Garamond', serif ;
+    }
+    form{
+        .form-contact{
+            padding: 30px;
+            color: #FAFFAF;
+            font-family:'EB Garamond', serif ; 
+            legend{
+                text-align: center;
+            } 
+            .i1{
+                margin: 20px;
+              }
+              .i11{
+                  margin-left: 100px;
+                }
+              
+              .i2{
+                  margin: 20px;
+              }
+              .i21{
+                  margin-left: 138px;
+                }
+              
+              .i3{
+                  margin: 20px;
+              }
+              .i31{
+                  margin-left: 118px;
+              }
+              
+              .i4{
+                  margin: 20px;
+              }
+              .i41{
+                  margin-left: 42px;
+              }
+              .boton{
+                margin-left: 275px;
+            }
+        }
+    }
+}
+footer{
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    @extend %fonts;
+    margin-bottom: 20px;
+    .f1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f2{
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            color: $color-fonts;
+        }
+    }
+}           
+
+//Estilos Cortinas
+/* Estilos Cortinas */
+
+body{
+    .contenedorcortinas{
+        .headercortinas{
+            h1{
+                @extend %fonts;
+                font-weight: map-get($map: $tituloprincipal, $key: fw-principal );
+                font-size: map-get($map: $tituloprincipal, $key: fs-principal);
+                text-align: center;
+                padding: 100px;
+            }
+            nav{
+                @extend %fonts;
+            }
+            .nav-background{
+                background-color: $color-secundario;
+            }
+            
+            .dropdown-menu{
+                background-color: $color-secundario;
+            }
+            .Logo{
+                height: 70px;
+                width: 70px;
+                margin-right: 30px;
+            }  
+        }
+        .maincortinas{
+            .title-cortinas{
+                color: #FAFFAF;
+                font-family: 'EB Garamond', serif;
+                padding: 20px;
+            }
+            .card-body{
+                color: #FAFFAF;
+                background-color: #67a29e;
+                font-family: 'EB Garamond', serif;
+            }
+        }
+    }
+}
+
+//Estilos Toldos
+/* Estilos Toldos */
+
+body{
+    .contenedortoldos{
+        .headertoldos{
+            h1{
+                @extend %fonts;
+                font-weight: map-get($map: $tituloprincipal, $key: fw-principal );
+                font-size: map-get($map: $tituloprincipal, $key: fs-principal);
+                text-align: center;
+                padding: 100px;
+            }
+            nav{
+                @extend %fonts;
+            }
+            .nav-background{
+                background-color: $color-secundario;
+            }
+            
+            .dropdown-menu{
+                background-color: $color-secundario;
+            }
+            .Logo{
+                height: 70px;
+                width: 70px;
+                margin-right: 30px;
+            }  
+        }
+        .maintoldos{
+            .title-toldos{
+                color: #FAFFAF;
+                font-family: 'EB Garamond', serif;
+                padding: 20px;
+            }
+            .card-body{
+                color: #FAFFAF;
+                background-color: #67a29e;
+                font-family: 'EB Garamond', serif;
+            }
+        }    
+    }
+}
+
+//Estilos Insttuctivos
+/* Estilos Instructivos */
+body{
+    .headerinstructivos{
+        h1{
+            @extend %fonts;
+            font-weight: map-get($map: $tituloprincipal, $key: fw-principal );
+            font-size: map-get($map: $tituloprincipal, $key: fs-principal);
+            text-align: center;
+            padding: 100px;
+        }
+        nav{
+            @extend %fonts;
+        }
+        .nav-background{
+            background-color: $color-secundario;
+        }
+        
+        .dropdown-menu{
+            background-color: $color-secundario;
+        }
+        .Logo{
+            height: 70px;
+            width: 70px;
+            margin-right: 30px;
+        }  
+    }
+    .h2-instructivos{
+        @extend %fonts;
+        text-align: center;
+        margin: 50px;
+    }
+}

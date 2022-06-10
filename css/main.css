@@ -5,10 +5,11 @@
   text-decoration: none;
   list-style-type: none; }
 
-body .contenedor header h1, body .contenedor header nav, body .contenedor main, body .contenedor main .maintxt, body .contenedor aside, body .contenedor aside fieldset form button, body .contenedor section .ctxt, body .contenedor .section2 .ttxt, body .contenedor footer {
+body .contenedor header h1, body .contenedor header nav, body .contenedor main, body .contenedor main .maintxt, body .contenedor aside, body .contenedor aside fieldset form button, body .contenedor section .ctxt, body .contenedor .section2 .ttxt, body .contenedor footer, .header-contact h1, .header-contact nav, footer, body .contenedorcortinas .headercortinas h1, body .contenedorcortinas .headercortinas nav, body .contenedortoldos .headertoldos h1, body .contenedortoldos .headertoldos nav, body .headerinstructivos h1, body .headerinstructivos nav, body .h2-instructivos {
   color: #FAFFAF;
   font-family: 'EB Garamond', serif; }
 
+/* Estilos Home */
 body {
   background-color: #22577E; }
   body .contenedor {
@@ -137,3 +138,152 @@ body {
         body .contenedor footer .f2 a {
           text-decoration: none;
           color: #FAFFAF; }
+
+/* Estilos Contacto */
+.header-contact h1 {
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px; }
+
+.header-contact .nav-background {
+  background-color: #67a29e; }
+
+.header-contact .dropdown-menu {
+  background-color: #67a29e; }
+
+.header-contact .Logo {
+  height: 70px;
+  width: 70px;
+  margin-right: 30px; }
+
+main .h2-contact {
+  margin: 30px;
+  text-align: center;
+  color: #FAFFAF;
+  font-family: 'EB Garamond', serif; }
+
+main .p-contact {
+  text-align: center;
+  color: #FAFFAF;
+  font-family: 'EB Garamond', serif; }
+
+main form .form-contact {
+  padding: 30px;
+  color: #FAFFAF;
+  font-family: 'EB Garamond', serif; }
+  main form .form-contact legend {
+    text-align: center; }
+  main form .form-contact .i1 {
+    margin: 20px; }
+  main form .form-contact .i11 {
+    margin-left: 100px; }
+  main form .form-contact .i2 {
+    margin: 20px; }
+  main form .form-contact .i21 {
+    margin-left: 138px; }
+  main form .form-contact .i3 {
+    margin: 20px; }
+  main form .form-contact .i31 {
+    margin-left: 118px; }
+  main form .form-contact .i4 {
+    margin: 20px; }
+  main form .form-contact .i41 {
+    margin-left: 42px; }
+  main form .form-contact .boton {
+    margin-left: 275px; }
+
+footer {
+  background-color: #22577E;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 20px; }
+  footer .f1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer .f2 {
+    display: flex;
+    flex-direction: column; }
+    footer .f2 a {
+      text-decoration: none;
+      color: #FAFFAF; }
+
+/* Estilos Cortinas */
+body .contenedorcortinas .headercortinas h1 {
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px; }
+
+body .contenedorcortinas .headercortinas .nav-background {
+  background-color: #67a29e; }
+
+body .contenedorcortinas .headercortinas .dropdown-menu {
+  background-color: #67a29e; }
+
+body .contenedorcortinas .headercortinas .Logo {
+  height: 70px;
+  width: 70px;
+  margin-right: 30px; }
+
+body .contenedorcortinas .maincortinas .title-cortinas {
+  color: #FAFFAF;
+  font-family: 'EB Garamond', serif;
+  padding: 20px; }
+
+body .contenedorcortinas .maincortinas .card-body {
+  color: #FAFFAF;
+  background-color: #67a29e;
+  font-family: 'EB Garamond', serif; }
+
+/* Estilos Toldos */
+body .contenedortoldos .headertoldos h1 {
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px; }
+
+body .contenedortoldos .headertoldos .nav-background {
+  background-color: #67a29e; }
+
+body .contenedortoldos .headertoldos .dropdown-menu {
+  background-color: #67a29e; }
+
+body .contenedortoldos .headertoldos .Logo {
+  height: 70px;
+  width: 70px;
+  margin-right: 30px; }
+
+body .contenedortoldos .maintoldos .title-toldos {
+  color: #FAFFAF;
+  font-family: 'EB Garamond', serif;
+  padding: 20px; }
+
+body .contenedortoldos .maintoldos .card-body {
+  color: #FAFFAF;
+  background-color: #67a29e;
+  font-family: 'EB Garamond', serif; }
+
+/* Estilos Instructivos */
+body .headerinstructivos h1 {
+  font-weight: 100;
+  font-size: 50px;
+  text-align: center;
+  padding: 100px; }
+
+body .headerinstructivos .nav-background {
+  background-color: #67a29e; }
+
+body .headerinstructivos .dropdown-menu {
+  background-color: #67a29e; }
+
+body .headerinstructivos .Logo {
+  height: 70px;
+  width: 70px;
+  margin-right: 30px; }
+
+body .h2-instructivos {
+  text-align: center;
+  margin: 50px; }
